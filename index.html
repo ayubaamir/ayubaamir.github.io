@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aamir Ayub — Python & Backend Developer</title>
+<meta name="description" content="Aamir Ayub — Python Developer specializing in FastAPI, Django and PostgreSQL. Building scalable backend systems and RESTful APIs." />
+<meta name="theme-color" content="#0b0f1a" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Aamir Ayub — Python & Backend Developer" />
+<meta property="og:description" content="Python Developer with hands-on experience in FastAPI, Django and PostgreSQL. Building scalable backend systems and RESTful APIs." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f1a'/%3E%3Ctext x='50' y='66' font-size='48' font-family='monospace' font-weight='700' fill='%2322d3ee' text-anchor='middle'%3EAA%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aamir Ayub",
+  "jobTitle": "Python Developer",
+  "email": "mailto:aamirayub8081@gmail.com",
+  "telephone": "+92-320-1966166",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rawalpindi",
+    "addressCountry": "Pakistan"
+  },
+  "knowsAbout": ["Python", "Django", "FastAPI", "Flask", "PostgreSQL", "Docker", "REST APIs"]
+}
+</script>
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol>
+</svg>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="bg-decor" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">&lt;AA/&gt;</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="hero-eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">Aamir Ayub</h1>
+      <h2 class="hero-role reveal">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-summary reveal">
+        Motivated Python Developer with hands-on experience in FastAPI, Django, and PostgreSQL.
+        Skilled in designing and building scalable backend systems, RESTful APIs, and full-stack
+        applications&mdash;seeking to grow within modern software development teams while contributing
+        to robust, production-ready solutions.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#projects" class="btn btn-outline">View projects</a>
+        <a href="public/Aamir_Ayub_CV.pdf" class="btn btn-outline" download>
+          <svg><use href="#icon-download"/></svg>
+          Download CV
+        </a>
+      </div>
+
+      <div class="hero-meta reveal">
+        <a class="meta-chip" href="mailto:aamirayub8081@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+          aamirayub8081@gmail.com
+        </a>
+        <a class="meta-chip" href="tel:+923201966166">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          0320-1966166
+        </a>
+        <span class="meta-chip meta-static">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Rawalpindi, Pakistan
+        </span>
+        <a class="meta-chip" href="https://github.com/ayubaamir" target="_blank" rel="noopener">
+          <svg><use href="#icon-github"/></svg>
+          GitHub
+        </a>
+        <a class="meta-chip" href="https://www.linkedin.com/in/aamir-ayub-8aa509214/" target="_blank" rel="noopener">
+          <svg><use href="#icon-linkedin"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-tag reveal">01 &mdash; About</p>
+      <h2 class="section-title reveal">A little about me</h2>
+
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm a backend-focused Python developer based in Rawalpindi, Pakistan, with hands-on
+          experience building RESTful APIs and full-stack applications using
+          <strong>FastAPI</strong>, <strong>Django</strong>, and <strong>PostgreSQL</strong>.
+          At Adam Software House I worked on internal projects covering API design, data
+          validation, and frontend&ndash;backend integration&mdash;and I'm always looking to
+          deepen those skills on real, production-grade systems.
+        </p>
+
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Rawalpindi, Pakistan</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Education</span>
+            <span class="fact-value">MCS, University of Science &amp; Technology, Bannu</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Focus</span>
+            <span class="fact-value">Backend systems &amp; REST APIs</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Interests</span>
+            <span class="fact-value">Learning new technologies, building innovative solutions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-tag reveal">02 &mdash; Skills</p>
+      <h2 class="section-title reveal">Technical skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">🐍</span>
+            <h3>Language</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">⚙️</span>
+            <h3>Frameworks</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Django</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Flask</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">🗄️</span>
+            <h3>Database</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">JSON</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">🛠️</span>
+            <h3>Tools &amp; Practices</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Data Validation</span>
+            <span class="tag">Backend Development</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section-tag reveal">03 &mdash; Experience</p>
+      <h2 class="section-title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Python Developer</h3>
+              <span class="timeline-date">Jan 2024 &ndash; Jan 2025</span>
+            </div>
+            <p class="timeline-org">Adam Software House</p>
+            <ul class="timeline-list">
+              <li>Gained practical exposure to Python backend development and database management</li>
+              <li>Collaborated with the team and worked on internal projects to enhance software skills</li>
+              <li>Learned to design and implement APIs, handle data validation, and integrate frontend with backend</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="section-tag reveal">04 &mdash; Projects</p>
+      <h2 class="section-title reveal">Things I've built</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-icon">💻</span>
+          </div>
+          <h3>Laptop / Inventory Management System</h3>
+          <div class="tag-list">
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">Django</span>
+            <span class="tag tag-sm">FastAPI</span>
+            <span class="tag tag-sm">PostgreSQL</span>
+            <span class="tag tag-sm">React</span>
+          </div>
+          <ul class="project-list">
+            <li>Built RESTful APIs using FastAPI for CRUD operations</li>
+            <li>Integrated PostgreSQL for efficient, structured data storage</li>
+            <li>Designed a React frontend to manage and display products</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-icon">🏥</span>
+          </div>
+          <h3>Hospital Management System</h3>
+          <div class="tag-list">
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">Django</span>
+            <span class="tag tag-sm">FastAPI</span>
+            <span class="tag tag-sm">PostgreSQL</span>
+          </div>
+          <ul class="project-list">
+            <li>Developed a backend system for hospital management</li>
+            <li>Built FastAPI APIs for patient CRUD operations</li>
+            <li>Enabled doctors to view patient records</li>
+            <li>Used PostgreSQL for structured data management</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-tag reveal">05 &mdash; Education</p>
+      <h2 class="section-title reveal">Education &amp; certifications</h2>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <h3>Master of Computer Science (MCS)</h3>
+            <p class="edu-org">University of Science &amp; Technology (UST), Bannu &mdash; KPK, Pakistan</p>
+            <p class="edu-meta">CGPA: 2.7 / 4.0 &middot; Department of Computer Science</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">📜</div>
+          <div>
+            <h3>Diploma in Information Technology (DIT)</h3>
+            <p class="edu-org">Khyber Pakhtunkhwa Trade Testing Board</p>
+            <p class="edu-meta">2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <p class="section-tag reveal">06 &mdash; Contact</p>
+      <h2 class="section-title reveal">Let's work together</h2>
+      <p class="contact-intro reveal">
+        I'm open to new opportunities and collaborations. Feel free to reach out&mdash;I'll get back to you as soon as I can.
+      </p>
+
+      <div class="contact-grid">
+        <a href="mailto:aamirayub8081@gmail.com" class="contact-card reveal">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          </span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">aamirayub8081@<wbr>gmail.com</span>
+        </a>
+
+        <a href="tel:+923201966166" class="contact-card reveal">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">0320-1966166</span>
+        </a>
+
+        <div class="contact-card contact-static reveal">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Rawalpindi, Pakistan</span>
+        </div>
+
+        <a href="https://github.com/ayubaamir" target="_blank" rel="noopener" class="contact-card reveal">
+          <span class="contact-icon">
+            <svg><use href="#icon-github"/></svg>
+          </span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/ayubaamir</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/aamir-ayub-8aa509214/" target="_blank" rel="noopener" class="contact-card reveal">
+          <span class="contact-icon">
+            <svg><use href="#icon-linkedin"/></svg>
+          </span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Aamir Ayub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="logo-mark">&lt;AA/&gt;</span>
+
+    <div class="footer-social">
+      <a href="https://github.com/ayubaamir" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg><use href="#icon-github"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/aamir-ayub-8aa509214/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg><use href="#icon-linkedin"/></svg>
+      </a>
+      <a href="mailto:aamirayub8081@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+      </a>
+    </div>
+
+    <p>&copy; <span id="year"></span> Aamir Ayub. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
