@@ -776,6 +776,25 @@ svg {
   background: var(--accent-2);
 }
 
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-2);
+}
+
+.project-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.project-link:hover {
+  color: var(--accent);
+}
+
 /* ---------- Education ---------- */
 
 .edu-grid {
